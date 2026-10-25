@@ -1,0 +1,13 @@
+interface:
+  display_name: "自动化天正景观电气图"
+  short_description: "面向室外景观配电的天正规划、落图、校核与交付流程"
+  default_prompt: "使用 $automated-tianzheng-landscape-electrical 根据当前项目资料完成景观配电规划、天正落图和校核。"
+
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "tianzheng"
+      description: "T20 天正建筑实时绘图 MCP"
+
+policy:
+  allow_implicit_invocation: true
